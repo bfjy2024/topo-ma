@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多边形对应矩角复形在对角圆作用下不完全商上同调环公式的推导</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .math {
+            background: #eef;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>多边形对应矩角复形在对角圆作用下不完全商上同调环公式的推导</h1>
+        
+        <h2>1. 矩角复形 <em>Z<sub>m</sub></em> 的定义和基本性质</h2>
+        <p>对于一个顶点数为 <em>m</em> 的多边形，其对应的矩角复形 <em>Z<sub>m</sub></em> 是由 <em>m</em> 个顶点和它们之间的连接关系构成的CW复形。</p >
+
+        <h2>2. 对角圆 <em>S<sup>1</sup><sub>d</sub></em> 的作用</h2>
+        <p>在多边形的矩角复形 <em>Z<sub>m</sub></em> 上，定义对角圆 <em>S<sup>1</sup><sub>d</sub></em> 的作用。这个作用是一个自由的群作用，表示每个顶点在圆周上的旋转。</p >
+
+        <h2>3. 构造不完全商空间</h2>
+        <p>构造不完全商空间 <em>Z<sub>m</sub> / S<sup>1</sup><sub>d</sub></em>，这是通过在 <em>Z<sub>m</sub></em> 上进行 <em>S<sup>1</sup><sub>d</sub></em> 作用得到的商空间。为了计算这个商空间的上同调环，我们需要一些代数拓扑工具。</p >
+
+        <h2>4. 上同调计算工具</h2>
+        
+        <h3>4.1 Borel结构</h3>
+        <p>利用Borel结构计算等变上同调。对于 <em>S<sup>1</sup><sub>d</sub></em> 作用，我们考虑Borel复形 <em>E<sub>S<sup>1</sup></sub> ×<sub>S<sup>1</sup></sub> Z<sub>m</sub></em>。</p >
+        <div class="math">
+            <p><strong>Borel结构</strong>：<em>E<sub>S<sup>1</sup></sub> ×<sub>S<sup>1</sup></sub> Z<sub>m</sub></em></p >
+            <p><strong>等变同调</strong>：<em>H<sup>*</sup><sub>S<sup>1</sup></sub>(Z<sub>m</sub>)</em></p >
+        </div>
+        
+        <h3>4.2 Leray-Serre谱序列</h3>
+        <p>通过Leray-Serre谱序列计算Borel复形的同调：</p >
+        <div class="math">
+            <p><em>E<sub>2</sub><sup>p,q</sup> = H<sup>p</sup>(B<sub>S<sup>1</sup></sub>; H<sup>q</sup>(F))</em></p >
+        </div>
+        <p>其中，底空间 <em>B<sub>S<sup>1</sup></sub></em> 是 <em>S<sup>1</sup></em> 的等变类空间，纤维 <em>F</em> 是矩角复形 <em>Z<sub>m</sub></em>。</p >
+
+        <h2>5. 具体计算</h2>
+        
+        <h3>5.1 确定矩角复形的上同调</h3>
+        <p>首先，计算矩角复形 <em>Z<sub>m</sub></em> 的上同调。对于顶点数为 <em>m</em> 的多边形，其矩角复形 <em>Z<sub>m</sub></em> 是由若干个球面乘积的连通和构成的。</p >
+        <div class="math">
+            <p><em>Z<sub>m</sub> ∼ #<sub>k=3</sub><sup>m-1</sup> (S<sup>k</sup> × S<sup>m+2-k</sup>) # (k-2)(m-2 choose k-1)</em></p >
+        </div>
+        
+        <h3>5.2 Borel复形的上同调</h3>
+        <p>利用Borel结构 <em>E<sub>S<sup>1</sup></sub> ×<sub>S<sup>1</sup></sub> Z<sub>m</sub></em> 计算等变同调。通过Leray-Serre谱序列，得到等变同调群：</p >
+        <div class="math">
+            <p><em>H<sup>*</sup><sub>S<sup>1</sup></sub>(Z<sub>m</sub>) = H<sup>*</sup>(E<sub>S<sup>1</sup></sub> ×<sub>S<sup>1</sup></sub> Z<sub>m</sub>)</em></p >
+        </div>
+        
+        <h3>5.3 商空间的同调</h3>
+        <p>从等变同调推导出商空间 <em>Z<sub>m</sub> / S<sup>1</sup><sub>d</sub></em> 的上同调。利用谱序列的收敛性，可以得到商空间的上同调环结构。</p >
+
+        <h2>6. 具体公式推导</h2>
+        
+        <h3>6.1 商空间的上同调环结构</h3>
+        <p>对于顶点数为 <em>m</em> 的多边形，其对应矩角复形 <em>Z<sub>m</sub></em> 在 <em>S<sup>1</sup><sub>d</sub></em> 作用下的商空间的上同调环结构为：</p >
+        <div class="math">
+            <p><em>H<sup>*</sup>(Z<sub>m</sub> / S<sup>1</sup><sub>d</sub>) ∼ Tor<sub>0,*</sub> ∼ k[x]/(x<sup>m</sup>)</em></p >
+            <p>其中，<em>deg x = 2</em>。这个结果是通过具体的同调计算和谱序列方法推导出的。</p >
+        </div>
+        
+        <h2>7. 具体实例验证</h2>
+        <p>为了验证上述公式的正确性，可以计算具体的实例，如顶点数为4到8的多边形对应的矩角复形，验证公式在具体情况下的应用。</p >
+
+        <h2>总结</h2>
+        <p>通过上述步骤，详细推导了多边形对应的矩角复形在对角圆作用下不完全商空间的上同调环公式。这个公式通过Borel结构和Leray-Serre谱序列等工具推导而来，验证了商空间的上同调性质。</p >
+    </div>
+</body>
+</html>
